@@ -269,3 +269,69 @@ As palavras reservadas em Java são termos especiais que têm significados espec
 | `while`           | Inicia um loop `while`. |
 
 </details>
+
+## Javadoc: Documentação em Java
+
+O Javadoc é uma ferramenta essencial no desenvolvimento Java que permite a geração automática de documentação a partir de comentários no código-fonte. Essa documentação é incrivelmente valiosa para descrever classes, métodos, campos e outros elementos do código, além de fornecer informações detalhadas sobre como utilizar corretamente o seu código.
+
+<details>
+<summary>Vantagens do Javadoc</summary>
+
+Uma das principais vantagens do Javadoc é a capacidade de criar facilmente documentação legível em formato HTML a partir dos comentários do código-fonte. Essa documentação resultante pode ser acessada por meio de um navegador da web, tornando-a acessível a toda a equipe de desenvolvimento e a outros interessados.
+</details>
+
+<details>
+<summary>Criando Documentação com Javadoc</summary>
+
+Em Java, a documentação JavaDoc é uma parte essencial para criar documentação legível e compreensível do seu código. Ela é composta por tanto **tags** quanto **comentários** no formato JavaDoc.
+
+### Tags JavaDoc
+
+As **tags JavaDoc** são elementos especiais inseridos nos comentários JavaDoc para fornecer informações estruturadas sobre as classes, métodos, campos e outros elementos do código. Aqui estão algumas tags JavaDoc comuns:
+
+- `@param`: Usada para descrever um parâmetro de um método. Informa o nome do parâmetro e sua finalidade.
+- `@return`: Usada para descrever o valor de retorno de um método, indicando o significado do valor retornado.
+- `@throws`: Usada para documentar as exceções que um método pode lançar, indicando os tipos de exceção e suas razões.
+- `@see`: Usada para criar links para outras classes, métodos ou recursos relacionados, permitindo uma referência rápida.
+- `@version`: Usada para especificar a versão da classe ou do método.
+- `@author`: Usada para especificar o autor ou autores do código.
+
+### Comentários JavaDoc
+
+Os **comentários JavaDoc** são blocos de comentários especiais que começam com `/**` e terminam com `*/`. Eles fornecem uma descrição detalhada de uma classe, método ou atributo, incluindo informações sobre seu propósito, funcionamento e uso adequado.
+
+Aqui está um exemplo de um comentário JavaDoc para um método:
+
+```java
+/**
+ * Este método realiza a soma de dois números inteiros.
+ *
+ * @param a O primeiro número a ser somado.
+ * @param b O segundo número a ser somado.
+ * @return O resultado da soma de a e b.
+ * @throws IllegalArgumentException Se a ou b forem negativos.
+ */
+public int somar(int a, int b) {
+    if (a < 0 || b < 0) {
+        throw new IllegalArgumentException("Os números não podem ser negativos.");
+    }
+    return a + b;
+}
+
+```
+
+### Gerando o JavaDoc
+
+Para gerar a documentação JavaDoc para seu projeto, siga estas etapas:
+
+1. **Navegue até o Diretório Raiz do Projeto**: Abra um terminal ou prompt de comando e navegue até o diretório raiz do seu projeto, onde os arquivos-fonte (`.java`) estão localizados.
+
+2. **Execute o Comando JavaDoc**: Utilize o seguinte comando para gerar a documentação:
+
+   ```bash
+   javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ../docs src/*.java
+   ```
+
+Após a conclusão do comando javadoc, a documentação JavaDoc será gerada no diretório de saída especificado (por exemplo, "docs"). Abra este diretório para visualizar os arquivos HTML com a documentação.
+
+</details>
