@@ -96,3 +96,30 @@ final int TAMANHO_MAXIMO = 100;
 final double TAXA_DE_JUROS = 0.05;
 final String NOME_DA_EMPRESA = "Minha Empresa";
 ```
+
+## Operadores
+
+Nesta seção, abordaremos diversos tipos de operadores essenciais na programação:
+
+- **Aritméticos:** Realizam cálculos matemáticos (+, -, *, /) em valores numéricos.
+- **Unários:** Operam em um único valor, como incremento (++), decremento (--), e negação (-), negação de uma expressao boleana (!).
+- **Relacionais:** Comparam valores para determinar igualdade (==), desigualdade (!=), maior que (>), menor que (<), maior ou igual (>=), e menor ou igual (<=).
+- **Lógicos:** São usados para criar expressões condicionais complexas com operadores como E lógico (&&), OU lógico (||), e NÃO lógico (!).
+- **Ternários:** Permite criar expressões condicionais de forma concisa em uma única linha.
+- **Atribuição:** O operador de atribuição (=) é usado para atribuir valores a variáveis.
+
+ **Observação:** O operador unário de negação (`!`) faz a negação de uma expressão booleana. Por exemplo, `!true` resulta em `false`.
+**Observação:** Quando usado com strings, o operador `+` realiza a concatenação de texto. Por exemplo, `"Olá, " + "Mundo"` resultará em `"Olá, Mundo"`.
+
+A tabela a seguir resume os operadores mencionados:
+
+| Tipo           | Operador                  | Exemplo                 |
+|----------------|---------------------------|-------------------------|
+| Aritméticos    | +, -, *, /, %                 | `a + b`, `x * y`         |
+| Unários        | ++, --, -, !                | `i++`, `-x`              |
+| Relacionais    | ==, !=, >, <, >=, <=       | `a == b`, `x > y`        |
+| Lógicos        | &&, ||, !                 | `x && y`, `!flag`         |
+| Ternários      | ? :                       | `condition ? true : false`|
+| Atribuição     | =                         | `x = 5`, `name = "John"` |
+
+Esses operadores são fundamentais para a manipulação e controle de dados em seus programas.
