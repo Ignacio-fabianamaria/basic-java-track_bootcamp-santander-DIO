@@ -29,7 +29,7 @@ Em Java, a declaração de variáveis é o processo de informar ao compilador qu
 
 <details>
 
-<summary>### Sintaxe Básica de Declaração de Variáveis</summary>
+<summary>Sintaxe Básica de Declaração de Variáveis</summary>
 
 ```java
 // Declarando uma variável int chamada 'idade'
@@ -46,7 +46,7 @@ String nome;
 
 <details>
 
-<summary>### Tipos Float, Double e Long</summary>
+<summary>Tipos Float, Double e Long</summary>
 
 Neste tópico, discutiremos os tipos de dados numéricos `float`, `double` e `long`, cada um com suas próprias características distintas.
 
@@ -76,14 +76,13 @@ Neste tópico, discutiremos os tipos de dados numéricos `float`, `double` e `lo
 
 </details>
 
-
 ### Variáveis vs. Constantes em Java
 
 Em Java, variáveis e constantes são usadas para armazenar dados, mas com propósitos e comportamentos distintos.
 
 <details>
 
-<summary>#### Variáveis</summary>
+<summary>Variáveis</summary>
 
 - **Variáveis** podem armazenar dados mutáveis durante a execução do programa.
 - Elas são declaradas usando palavras-chave como `int`, `double`, `String`, entre outras, seguidas pelo nome da variável.
@@ -95,11 +94,11 @@ Em Java, variáveis e constantes são usadas para armazenar dados, mas com prop�
   idade = 26;     // Alteração do valor da variável "idade" para 26
   ```
 
-<details>
+</details>
 
 <details>
 
-<summary>#### Constante</summary>
+<summary>Constante</summary>
 
 - Em Java, a declaração de constantes é feita usando a palavra-chave `final``.
 - Em Java, a convenção comum para nomear constantes é usando letras maiúsculas. Isso torna mais fácil identificar rapidamente quais identificadores são constantes no código.
@@ -202,6 +201,11 @@ Criando um exemplo de uma classe para representar uma SmartTV
 </details>
 
 ## Escopo
-- Escopo de classe
-- Escopo de método
-- Escopo de fluxo
+
+Em programação, o escopo refere-se ao ambiente onde uma variável pode ser acessada e usada. Em Java, o escopo de variáveis é determinado pelo bloco onde ela foi declarada. Existem três principais tipos de escopo em Java:
+
+- **Escopo de Classe**: Neste escopo, os atributos (variáveis) são declarados no corpo principal da classe e, portanto, são acessíveis por todos os métodos dentro da classe.
+- **Escopo de Método**: Quando uma variável é declarada dentro de um método, o escopo dessa variável está limitado apenas ao corpo desse método. Isso significa que ela só pode ser usada dentro desse método específico e não está acessível em outros métodos da mesma classe.
+- **Escopo de Fluxo**: Este escopo refere-se ao escopo de variáveis declaradas em estruturas de controle de fluxo, como loops e condicionais. Variáveis declaradas dentro de um bloco de código dentro de uma estrutura de controle de fluxo têm escopo limitado a esse bloco e não podem ser acessadas fora dele.
+
+## Palavras Reservadas
