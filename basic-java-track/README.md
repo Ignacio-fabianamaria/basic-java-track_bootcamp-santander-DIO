@@ -1,15 +1,12 @@
-# Tipos e Variáveis
-
-## Assuntos:
-
-- **Numéricos inteiros e decimais:** Aborda os tipos de dados numéricos utilizados em Java, incluindo números inteiros e números decimais (ponto flutuante).
-- **Tipos lógicos:** Explora os tipos de dados booleanos em Java, usados para representar valores verdadeiros ou falsos.
-- **Objetos:** Discute a criação e uso de objetos em Java, incluindo como criar instâncias de classes e interagir com métodos e atributos de objetos.
-- **Diferença entre variável e constante:** Esclarece a distinção entre variáveis e constantes em Java, destacando como cada um é declarado e usado no código.
+# Aprendendo a Sintaxe Java
 
 ## Tipos Primitivos em Java
 
 Os tipos primitivos são os blocos de construção básicos para armazenar dados em Java. Eles representam valores simples e não possuem métodos ou propriedades. Aqui estão os principais tipos primitivos em Java:
+
+<details>
+
+<sumary>Tabela de Tipos Primitivos</sumary>
 
 | Tipo Primitivo | Descrição                                           | Exemplo    |
 |----------------|-----------------------------------------------------|------------|
@@ -24,11 +21,15 @@ Os tipos primitivos são os blocos de construção básicos para armazenar dados
 
 Esses tipos primitivos são usados para representar dados simples, como números inteiros, números de ponto flutuante, caracteres e valores booleanos, em programas Java.
 
+</details>
+
 ## Declaração de Variáveis em Java
 
 Em Java, a declaração de variáveis é o processo de informar ao compilador qual tipo de dado a variável conterá e qual será o seu nome. É importante declarar as variáveis antes de usá-las em um programa. Aqui estão alguns exemplos de como declarar variáveis em Java:
 
-## Sintaxe Básica de Declaração de Variáveis
+<details>
+
+<sumary>### Sintaxe Básica de Declaração de Variáveis</sumary>
 
 ```java
 // Declarando uma variável int chamada 'idade'
@@ -41,7 +42,11 @@ double preco;
 String nome;
 ```
 
-## Tipos Float, Double e Long
+</details>
+
+<details>
+
+<sumary>### Tipos Float, Double e Long</sumary>
 
 Neste tópico, discutiremos os tipos de dados numéricos `float`, `double` e `long`, cada um com suas próprias características distintas.
 
@@ -69,11 +74,16 @@ Neste tópico, discutiremos os tipos de dados numéricos `float`, `double` e `lo
   long meuLong = 1234567890L;
   ```
 
-## Variáveis vs. Constantes em Java
+</details>
+
+
+### Variáveis vs. Constantes em Java
 
 Em Java, variáveis e constantes são usadas para armazenar dados, mas com propósitos e comportamentos distintos.
 
-### Variáveis
+<details>
+
+<sumary>#### Variáveis</sumary>
 
 - **Variáveis** podem armazenar dados mutáveis durante a execução do programa.
 - Elas são declaradas usando palavras-chave como `int`, `double`, `String`, entre outras, seguidas pelo nome da variável.
@@ -85,7 +95,11 @@ Em Java, variáveis e constantes são usadas para armazenar dados, mas com prop�
   idade = 26;     // Alteração do valor da variável "idade" para 26
   ```
 
-### Constante
+<details>
+
+<details>
+
+<sumary>#### Constante</sumary>
 
 - Em Java, a declaração de constantes é feita usando a palavra-chave `final``.
 - Em Java, a convenção comum para nomear constantes é usando letras maiúsculas. Isso torna mais fácil identificar rapidamente quais identificadores são constantes no código.
@@ -97,12 +111,14 @@ final double TAXA_DE_JUROS = 0.05;
 final String NOME_DA_EMPRESA = "Minha Empresa";
 ```
 
+</details>
+
 ## Operadores
 
 Nesta seção, abordaremos diversos tipos de operadores essenciais na programação:
 
 - **Aritméticos:** Realizam cálculos matemáticos (+, -, *, /) em valores numéricos.
-- **Unários:** Operam em um único valor, como incremento (++), decremento (--), e negação (-), negação de uma expressao boleana (!).
+- **Unários:** Operam em um único valor, como incremento (++), decremento (--), e negação (-).
 - **Relacionais:** Comparam valores para determinar igualdade (==), desigualdade (!=), maior que (>), menor que (<), maior ou igual (>=), e menor ou igual (<=).
 - **Lógicos:** São usados para criar expressões condicionais complexas com operadores como E lógico (&&), OU lógico (||), e NÃO lógico (!).
 - **Ternários:** Permite criar expressões condicionais de forma concisa em uma única linha.
@@ -111,15 +127,17 @@ Nesta seção, abordaremos diversos tipos de operadores essenciais na programaç
  **Observação:** O operador unário de negação (`!`) faz a negação de uma expressão booleana. Por exemplo, `!true` resulta em `false`.
 **Observação:** Quando usado com strings, o operador `+` realiza a concatenação de texto. Por exemplo, `"Olá, " + "Mundo"` resultará em `"Olá, Mundo"`.
 
-A tabela a seguir resume os operadores mencionados:
+<details>
+
+<sumary>A tabela a seguir resume os operadores mencionados:</sumary>
 
 | Tipo           | Operador                  | Exemplo                 |
 |----------------|---------------------------|-------------------------|
 | Aritméticos    | +, -, *, /, %                 | `a + b`, `x * y`         |
 | Unários        | ++, --, -, !                | `i++`, `-x`              |
 | Relacionais    | ==, !=, >, <, >=, <=       | `a == b`, `x > y`        |
-| Lógicos        | &&, ||, !                 | `x && y`, `!flag`         |
+| Lógicos        | "&&", "||", "!"             | `x && y`, `!flag`         |
 | Ternários      | ? :                       | `condition ? true : false`|
 | Atribuição     | =                         | `x = 5`, `name = "John"` |
 
-Esses operadores são fundamentais para a manipulação e controle de dados em seus programas.
+</details>
