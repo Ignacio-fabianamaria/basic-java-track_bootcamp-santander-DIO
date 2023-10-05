@@ -208,4 +208,64 @@ Em programação, o escopo refere-se ao ambiente onde uma variável pode ser ace
 - **Escopo de Método**: Quando uma variável é declarada dentro de um método, o escopo dessa variável está limitado apenas ao corpo desse método. Isso significa que ela só pode ser usada dentro desse método específico e não está acessível em outros métodos da mesma classe.
 - **Escopo de Fluxo**: Este escopo refere-se ao escopo de variáveis declaradas em estruturas de controle de fluxo, como loops e condicionais. Variáveis declaradas dentro de um bloco de código dentro de uma estrutura de controle de fluxo têm escopo limitado a esse bloco e não podem ser acessadas fora dele.
 
-## Palavras Reservadas
+## Palavras Reservadas em Java
+
+As palavras reservadas em Java são termos especiais que têm significados específicos na linguagem de programação Java. Elas não podem ser usadas como identificadores (nomes de variáveis, classes, métodos, etc.) em seu código Java, pois são reservadas para fins específicos.
+
+<details>
+<summary>Tabela com as palavras reservadas em JAVA</summary>
+
+| Palavra Reservada | Descrição                                     |
+|-------------------|-----------------------------------------------|
+| `abstract`        | Usado para declarar classes abstratas e métodos abstratos. |
+| `assert`          | Usado para testes de asserção (não recomendado para uso geral). |
+| `boolean`         | Representa um tipo de dado booleano com valores `true` ou `false`. |
+| `break`           | Usado para sair de loops `for`, `while`, ou `do-while`. |
+| `byte`            | Representa um tipo de dado de 8 bits com valores entre -128 e 127. |
+| `case`            | Usado em declarações `switch` para identificar ramos de código. |
+| `catch`           | Captura exceções em blocos `try-catch`. |
+| `char`            | Representa um tipo de dado de caractere Unicode de 16 bits. |
+| `class`           | Define uma classe em Java. |
+| `const`           | Não utilizado em Java (reservado para uso futuro). |
+| `continue`        | Usado para continuar com a próxima iteração de loops `for`, `while`, ou `do-while`. |
+| `default`         | Usado em declarações `switch` como um caso padrão quando nenhum outro caso corresponde. |
+| `do`              | Inicia um loop `do-while`. |
+| `double`          | Representa um tipo de dado de ponto flutuante de 64 bits. |
+| `else`            | Usado em condicionais `if-else`. |
+| `enum`            | Define um tipo enumerado. |
+| `extends`         | Indica uma herança de classe. |
+| `final`           | Usado para declarar que uma classe, método ou variável não pode ser estendida, substituída ou modificada. |
+| `finally`         | Usado em blocos `try-finally` para garantir a execução de código. |
+| `float`           | Representa um tipo de dado de ponto flutuante de 32 bits. |
+| `for`             | Inicia um loop `for`. |
+| `if`              | Inicia uma condicional `if`. |
+| `implements`      | Indica que uma classe deve implementar uma interface. |
+| `import`          | Importa classes ou pacotes para uso no código. |
+| `instanceof`      | Verifica se um objeto é uma instância de uma classe. |
+| `int`             | Representa um tipo de dado de inteiro de 32 bits. |
+| `interface`       | Define uma interface. |
+| `long`            | Representa um tipo de dado de inteiro longo de 64 bits. |
+| `native`          | Indica que um método é implementado em código nativo (geralmente C/C++). |
+| `new`             | Cria uma nova instância de uma classe ou um array. |
+| `null`            | Representa uma referência nula. |
+| `package`         | Define um pacote de classes. |
+| `private`         | Indica que um membro de classe é acessível apenas dentro da própria classe. |
+| `protected`       | Indica que um membro de classe é acessível dentro da própria classe e suas subclasses. |
+| `public`          | Indica que um membro de classe é acessível de qualquer lugar. |
+| `return`          | Retorna um valor de um método. |
+| `short`           | Representa um tipo de dado de inteiro curto de 16 bits. |
+| `static`          | Indica que um membro de classe pertence à classe, não a instâncias individuais. |
+| `strictfp`        | Indica que um método segue as regras de ponto flutuante estritas. |
+| `super`           | Chama um método da classe pai ou acessa um construtor da classe pai. |
+| `switch`          | Inicia uma declaração `switch` para seleção múltipla. |
+| `synchronized`    | Sincroniza threads para acesso seguro a recursos compartilhados. |
+| `this`            | Referência à instância atual de uma classe. |
+| `throw`           | Lança uma exceção. |
+| `throws`          | Declara exceções que podem ser lançadas por um método. |
+| `transient`       | Indica que um campo de classe não deve ser serializado. |
+| `try`             | Inicia um bloco `try` para tratamento de exceções. |
+| `void`            | Indica que um método não retorna um valor. |
+| `volatile`        | Indica que um campo de classe pode ser modificado por várias threads. |
+| `while`           | Inicia um loop `while`. |
+
+</details>
