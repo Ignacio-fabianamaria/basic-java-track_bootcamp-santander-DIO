@@ -6,7 +6,7 @@ Os tipos primitivos são os blocos de construção básicos para armazenar dados
 
 <details>
 
-<sumary>Tabela de Tipos Primitivos</sumary>
+<summary>Tabela de Tipos Primitivos</summary>
 
 | Tipo Primitivo | Descrição                                           | Exemplo    |
 |----------------|-----------------------------------------------------|------------|
@@ -29,7 +29,7 @@ Em Java, a declaração de variáveis é o processo de informar ao compilador qu
 
 <details>
 
-<sumary>### Sintaxe Básica de Declaração de Variáveis</sumary>
+<summary>### Sintaxe Básica de Declaração de Variáveis</summary>
 
 ```java
 // Declarando uma variável int chamada 'idade'
@@ -46,7 +46,7 @@ String nome;
 
 <details>
 
-<sumary>### Tipos Float, Double e Long</sumary>
+<summary>### Tipos Float, Double e Long</summary>
 
 Neste tópico, discutiremos os tipos de dados numéricos `float`, `double` e `long`, cada um com suas próprias características distintas.
 
@@ -83,7 +83,7 @@ Em Java, variáveis e constantes são usadas para armazenar dados, mas com prop�
 
 <details>
 
-<sumary>#### Variáveis</sumary>
+<summary>#### Variáveis</summary>
 
 - **Variáveis** podem armazenar dados mutáveis durante a execução do programa.
 - Elas são declaradas usando palavras-chave como `int`, `double`, `String`, entre outras, seguidas pelo nome da variável.
@@ -99,7 +99,7 @@ Em Java, variáveis e constantes são usadas para armazenar dados, mas com prop�
 
 <details>
 
-<sumary>#### Constante</sumary>
+<summary>#### Constante</summary>
 
 - Em Java, a declaração de constantes é feita usando a palavra-chave `final``.
 - Em Java, a convenção comum para nomear constantes é usando letras maiúsculas. Isso torna mais fácil identificar rapidamente quais identificadores são constantes no código.
@@ -129,7 +129,7 @@ Nesta seção, abordaremos diversos tipos de operadores essenciais na programaç
 
 <details>
 
-<sumary>A tabela a seguir resume os operadores mencionados:</sumary>
+<summary>A tabela a seguir resume os operadores mencionados:</summary>
 
 | Tipo           | Operador                  | Exemplo                 |
 |----------------|---------------------------|-------------------------|
@@ -141,3 +141,67 @@ Nesta seção, abordaremos diversos tipos de operadores essenciais na programaç
 | Atribuição     | =                         | `x = 5`, `name = "John"` |
 
 </details>
+
+## Métodos
+
+Métodos são blocos de código reutilizáveis em Java que desempenham um papel fundamental na organização e execução de funcionalidades em programas. Ao definir um método, é essencial considerar alguns aspectos essenciais:
+
+- **Propósito Principal do Método:** Um método deve ter um propósito claro e bem definido. Ele é projetado para realizar uma tarefa específica dentro do programa.
+
+- **Tipo de Retorno:** Cada método em Java possui um tipo de retorno, que indica o tipo de dado que o método devolverá como resultado após a sua execução. Pode ser um tipo primitivo, um objeto ou até mesmo `void`, indicando que o método não retorna nenhum valor.
+
+- **Parâmetros:** Métodos podem aceitar parâmetros, que são valores ou referências necessárias para executar a operação desejada. Os parâmetros são especificados entre parênteses e podem ser opcionais ou múltiplos, dependendo da necessidade do método.
+
+- **Visibilidade:** A visibilidade de um método é controlada por modificadores de acesso, como `public`, `private`, `protected` ou o padrão (sem modificador). A escolha da visibilidade determina quem pode acessar e chamar o método.
+
+<details>
+<summary>Critérios de nomeação dos métodos</summary>
+
+Ao nomear métodos em Java, é importante seguir algumas convenções e critérios para tornar seu código mais legível e compreensível. Aqui estão algumas diretrizes gerais:
+
+- **Convenção CamelCase:** O nome do método deve seguir a convenção CamelCase, onde a primeira palavra começa com letra minúscula e as palavras subsequentes começam com letra maiúscula. Por exemplo, `calcularSalario()`.
+
+- **Nome Descritivo:** Escolha nomes descritivos que indiquem claramente a função do método. Evite nomes genéricos como `funcao()` ou `metodo1()`. Prefira nomes que descrevam o que o método faz, como `calcularMedia()` ou `enviarEmail()`.
+
+- **Verbos:** Use verbos que descrevam a ação que o método executa. Isso ajuda a indicar o propósito do método. Por exemplo, use nomes como `calcular`, `salvar`, `enviar`, etc.
+
+- **Evite Abreviações Obscuras:** Evite abreviações que não sejam facilmente compreensíveis. Use nomes completos e significativos.
+
+- **Coerência:** Mantenha uma convenção de nomeação consistente em todo o seu código para facilitar a leitura e a manutenção.
+
+- **Evite Nomes Excessivamente Longos:** Embora seja importante ser descritivo, evite nomes excessivamente longos que tornem o código difícil de ler. Encontre um equilíbrio entre clareza e concisão.
+
+- **Use Nomes que Indiquem Retorno:** Se possível, escolha nomes que indiquem o que o método retorna. Por exemplo, um método que calcula o preço pode ser chamado de `calcularPreco()`.
+
+- **Exemplos Adequados:**
+
+  1. `calcularSalario()`: Um nome descritivo que indica claramente o propósito do método.
+  2. `enviarEmail()`: Usando um verbo que descreve a ação realizada pelo método.
+  3. `calcularMedia()`: Um nome que indica claramente a operação realizada.
+
+- **Exemplos Não Adequados:**
+
+  1. `fnc()`: Um nome genérico e abreviado que não descreve a função do método.
+  2. `metodo1()`: Um nome genérico e sem significado.
+  3. `xyz()`: Um nome curto e obscuro que não indica o propósito do método.
+  4. `calculateValueBasedOnAgeAndIncomeAndLocationAnd...()`: Um nome excessivamente longo e difícil de ler.
+
+</details>
+
+### Exercitando os conceitos sobre métodos em JAVA
+
+Criando um exemplo de uma classe para representar uma SmartTV
+
+<details><summary>Requisitos:</summary>
+
+ 1. Deve possuir as seguintes características: ligada `(boolean)`, canal `(int)` e volume `(int)`.
+ 2. A TV poderá ligar e desligare assim mudar o seu `status`.
+ 3. A TV poderá aumentar ou diminuir o volume sempre em `+1 ou -1`.
+ 4. A TV poderá mudar de canal de 1 em 1 ou definindo diretamente pelo número.
+
+</details>
+
+## Escopo
+- Escopo de classe
+- Escopo de método
+- Escopo de fluxo
