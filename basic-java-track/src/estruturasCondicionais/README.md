@@ -17,6 +17,8 @@ public class CaixaEletronico {
 }
 ```
 
+`basic-java-track/src/estruturasCondicionais/CaixaEletronico.java`
+
 ## CONDICIONAIS COMPOSTA
 
 ```java
@@ -34,6 +36,8 @@ public class ResultadoEscolaar {
     
 }
 ```
+
+`basic-java-track/src/estruturasCondicionais/ResultadoEscolar.java`
 
 ## CONDICIONAIS ENCADEADAS
 
@@ -55,6 +59,8 @@ public class Boletim {
 }
 ```
 
+`basic-java-track/src/estruturasCondicionais/Boletim.java`
+
 ## CONDIÇÃO TERNÁRIA
 
 ```java
@@ -69,6 +75,8 @@ public class Habilitação {
     }
 }
 ```
+
+`basic-java-track/src/estruturasCondicionais/Habilitação.java`
 
 ## CONDIÇÃO TERNÁRIA ENCADEADA
 
@@ -108,3 +116,4 @@ public class SistemaMedidas {
     }
 }
 ```
+
